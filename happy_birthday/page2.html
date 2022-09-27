@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy | Birthday</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        @font-face {
+            font-family: myFirstFont;
+            src: url('Christmas Smile ttf.ttf');
+        }
+        @font-face {
+            font-family: mySecondFont;
+            src: url('BOTANIC PERSONAL USE.ttf');
+        }
+        body{
+            background-color: #0c0c0c;
+        }
+        .container{
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+        }
+        h1 {
+            text-align: center;
+            font-family: myFirstFont;
+            /* font-family: mySecondFont; */
+            color: rgb(248, 244, 8);
+            font-size: 100px;
+            position: absolute;
+            background: url(textbg.png) no-repeat;
+            top: 10%;
+            left: 50%;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            line-height: 150px;
+        }
+        .left-image{
+            position: absolute;
+            top: 20%;
+            left: 25%;
+        }
+        @media screen and (max-width: 900px) {
+            h1 {
+                font-size: 80px;
+                line-height: 100px;
+                position: absolute;
+                top: 15%;
+                left: 50%;
+            }
+            .left-image{
+            position: absolute;
+            top: 10%;
+            left: 15%;
+            }
+        }
+        @media screen and (max-width: 600px) {
+            h1 {
+                font-size: 60px;
+                line-height: 80px;
+                position: absolute;
+                top: 20%;
+                left: 45%;
+            }
+            .left-image{
+            position: absolute;
+            top: 10%;
+            left: 1%;
+            }
+        }
+        @media screen and (max-width: 500px) {
+            h1 {
+                font-size: 60px;
+                line-height: 80px;
+                position: absolute;
+                top: 15%;
+                left: 45%;
+            }
+            .left-image{
+            position: absolute;
+            top: 20%;
+            left: -2%;
+            }
+            .left-image img{
+                width: 300px;
+            }
+        }   
+        @media screen and (max-width: 400px) {
+            h1 {
+                font-size: 50px;
+                line-height: 70px;
+                position: absolute;
+                top: 18%;
+                left: 45%;
+            }
+            .left-image{
+            position: absolute;
+            top: 20%;
+            left: -2%;
+            }
+            .left-image img{
+                width: 300px;
+            }
+        }
+        @media screen and (max-width: 360px) {
+            h1 {
+                font-size: 35px;
+                line-height: 50px;
+                position: absolute;
+                top: 30%;
+                left: 45%;
+            }
+            .left-image{
+            position: absolute;
+            top: 25%;
+            left: -2%;
+            }
+            .left-image img{
+                width: 270px;
+            }
+        }
+        .pack{
+            position: absolute;
+            width: 100vw;
+            height: 100vh;
+        }
+        .cube{
+            position: absolute;
+            width: 10px;
+            height: 10px;
+            transform-style: preserve-3d;
+            z-index: -1;
+            
+        }
+        .checked{
+            color: orange;
+            animation: animate 0.5s infinite;
+        }
+        #cube1{
+            position: absolute;
+            bottom: 5%;
+            left: 5%;
+        }
+        #cube2{
+            position: absolute;
+            bottom: 30%;
+            left: 50%;
+        }
+        #cube3{
+            position: absolute;
+            bottom: 10%;
+            left: 40%;
+        }
+        #cube4{
+            position: absolute;
+            bottom: 30%;
+            left: 75%;
+        }
+        #cube5{
+            position: absolute;
+            bottom: 10%;
+            left: 80%;
+        }
+        #cube6{
+            position: absolute;
+            bottom: 80%;
+            left: 10%;
+        }
+        #cube7{
+            position: absolute;
+            bottom: 35%;
+            left: 60%;
+        }
+        #cube8{
+            position: absolute;
+            bottom: 30%;
+            left: 10%;
+        }
+        #cube9{
+            position: absolute;
+            bottom: 20%;
+            left: 90%;
+        }
+        #cube10{
+            position: absolute;
+            bottom: 80%;
+            left: 60%;
+        }
+        #cube11{
+            position: absolute;
+            bottom: 40%;
+            left: 30%;
+        }
+        #cube12{
+            position: absolute;
+            bottom: 35%;
+            left: 30%;
+        }
+        #cube13{
+            position: absolute;
+            bottom: 70%;
+            left: 20%;
+        }
+        #cube14{
+            position: absolute;
+            bottom: 20%;
+            left: 30%;
+        }
+        #cube15{
+            position: absolute;
+            bottom: 70%;
+            left: 50%;
+        }
+        #cube16{
+            position: absolute;
+            bottom: 95%;
+            left: 90%;
+        }
+        #cube17{
+            position: absolute;
+            bottom: 60%;
+            left: 5%;
+        }
+        @keyframes animate{
+            0%{
+                transform:scale(1);
+                color: orange;
+                text-shadow: 0px 0px 10px white;
+            }
+            100%{
+                transform:scale(1.1);
+                color: rgb(252, 252, 8);
+                text-shadow:0px 0px 10px white;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="pack">
+        <div class="cube" id="cube1"><span class="fa fa-star checked"></span></div>
+        <div class="cube" id="cube2"><span class="fa fa-star checked"></span></div>
+        <div class="cube" id="cube3"><span class="fa fa-star checked"></span></div>
+        <div class="cube" id="cube4"><span class="fa fa-star checked"></span></div>
+        <div class="cube" id="cube5"><span class="fa fa-star checked"></span></div>
+        <div class="cube" id="cube6"><span class="fa fa-star checked"></span></div>
+        <div class="cube" id="cube8"><span class="fa fa-star checked"></span></div>
+        <div class="cube" id="cube7"><span class="fa fa-star checked"></span></div>
+        <div class="cube" id="cube9"><span class="fa fa-star checked"></span></div>
+        <div class="cube" id="cube10"><span class="fa fa-star checked"></span></div>
+        <div class="cube" id="cube11"><span class="fa fa-star checked"></span></div>
+        <div class="cube" id="cube12"><span class="fa fa-star checked"></span></div>
+        <div class="cube" id="cube13"><span class="fa fa-star checked"></span></div>
+        <div class="cube" id="cube14"><span class="fa fa-star checked"></span></div>
+        <div class="cube" id="cube15"><span class="fa fa-star checked"></span></div>
+        <div class="cube" id="cube16"><span class="fa fa-star checked"></span></div>
+        <div class="cube" id="cube17"><span class="fa fa-star checked"></span></div>
+    </div>
+    <div class="container">
+        <div class="left-image">
+            <img src="bdy2.png" alt="">
+        </div>
+        <h1>
+            Happy <br> Birthday <br> Subhi
+        </h1>
+        
+    </div>
+    
+</body>
+
+</html>

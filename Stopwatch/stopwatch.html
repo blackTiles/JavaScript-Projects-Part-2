@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Clock</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <h1>Stopwatch</h1>
+    <div class="container">
+        <div class="time-container">
+            <div class="round">
+                <div class="minute" id="hr">00</div>
+                <span class="semi-colon">:</span>
+                <div class="seconds" id="min">00</div>
+                <span class="semi-colon">:</span>
+                <div class="milliseconds" id="sec">00</div>
+            </div>
+        </div>
+        <div class="flag-container">
+        </div>
+        <div class="button-container">
+            <button onclick="reset()" class="btns"><i class="fa-solid fa-arrow-rotate-left"></i></button>
+            <button onclick="toggle()" class="" id="start-btn"><i class="fa-solid fa-play"></i></button>
+            <button class="btns" onclick="recordTime()"><i class="fa-regular fa-font-awesome"></i></button>
+        </div>
+        
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
